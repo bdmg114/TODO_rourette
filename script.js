@@ -14,7 +14,7 @@
     async function spin() {
         if (items.length >= 1){
             init();
-            init(false, 1, 1);
+            init(false, 3, 2);
             const boxes = doors[0].querySelector(".boxes");
             const duration = parseInt(boxes.style.transitionDuration);
             await new Promise((resolve) => setTimeout(resolve, duration * 100));
