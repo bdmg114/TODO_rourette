@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Wheel Animation</title>
+    <style>
+        .wheel-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #3498db;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 2s cubic-bezier(0.4, 2.4, 0.6, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wheel-container">
+        <div class="wheel" id="spinningWheel">Spin me!</div>
+    </div>
+
+    <button onclick="spinWheel()">Spin</button>
+
+    <script>
+        function spinWheel() {
+            const wheel = document.getElementById('spinningWheel');
+            const randomRotation = Math.floor(Math.random() * 360) + 720; // Rotate between 720 and 1080 degrees
+
+            // Apply spinning animation by setting the rotation
+            wheel.style.transform = `rotate(${randomRotation}deg)`;
+
+            // After a short delay, reset the rotation
+            setTimeout(() => {
+                wheel.style.transform = 'rotate(0deg)';
+            }, 2000); // Wait for 2 seconds (adjust as needed)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+html {
+    background-color: #593636;
+    color: #d9d9d9;
+}
+.todo_container {
+    display: flex;
+}
+
+.todo {
+    flex-grow: 1;
+    align-items: center;
+}
+
+
+.doors {
+    width: 100%;
+}
+
+.door {
+    margin-left: auto; margin-right: auto;
+    background: #d9d9d9;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    border-radius: 1ex;
+}
+
+.boxes {
+    /* transform: translateY(0); */
+    transition: transform 1s ease-in-out;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.buttons {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    margin: 0 0.2rem 0 0.2rem;
+
+}
+
+button.play {
+    width: 100px;
+    height: 50px;
+    background-color: #D9A404;
+    border-radius: 10px;
+    border: none;
+    font-weight:600;
+    font-size: 20px;
+    color: azure;
+}
+
+button.go {
+    background-color: #F2E416;
+    border-radius: 10px;
+    border: none;
+    font-weight:600;
+    font-size: 50px;
+    color: azure;
+}
+
+.info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.inputField {
+    margin: 20px;
+    display: flex;
+}
+
+#todo {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.go {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    resize: both;
+    background-color: #d9d9d9;
+    color: #262626;
+    box-shadow: inset -3px -3px 5px rgb(196, 196, 196);
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}

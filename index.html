@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할일 룰렛</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inputField">
+        <textarea name="todo" id="todo" placeholder="할일을 입력하세요..&#13;&#10;&#13;&#10;(예: 할일1, 할일2, 할일3)"rows="10" cols="10" wrap="hard"></textarea>
+        <button class="go">GO</button>
+    </div>
+    <h3 class="remaining">남은할일: 국어 모의고사 1회, 생윤 모의고사 1회, 수학 교재 풀기</h3>
+    <div class="wheel_container">
+        <div class="doors">
+            <div class="door">
+              <div class="boxes">
+                <!-- <div class="box">?</div> -->
+              </div>
+            </div>
+          <div class="buttons">
+            <button class="play spinner">Spin</button>
+            <button class="play reseter">Reset</button>
+          </div>  
+    </div>
+    <div class="todo_container">
+        <div class="todo am">
+            <h3>오전공부</h3>
+            <h4>???</h4>
+        </div>
+        <div class="todo pm1">
+            <h3>오후공부1</h3>
+            <h4>???</h4>
+        </div>
+        <div class="todo pm2">
+            <h3>오후공부2</h3>
+            <h4>???</h4>
+        </div>
+        <div class="todo pm3">
+            <h3>오후공부3</h3>
+            <h4>???</h4>
+        </div>
+        <div class="todo pm4">
+            <h3>저녁공부</h3>
+            <h4>???</h4>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
