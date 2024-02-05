@@ -41,7 +41,8 @@
     }
 
     function go() {
-        items = inputField.value.split(',');
+        items = inputField.value.split('\n- ');
+        items[0] = items[0].replace('- ','');
         init();
     }
 
